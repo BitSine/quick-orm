@@ -12,15 +12,18 @@ export class PostgreSQLProvider {
       database: options.db,
       port: options.port,
     });
+
+    console.log(options.message);
   }
 
   public async queryRaw(queryData: string): Promise<void> {
-    this.client.query(queryData, (err, res) => {
-      if (err) {
-        throw new Error(err.stack);
-      } else {
+    this.client
+      .query(queryData)
+      .then((res) => {
         console.log(res.rows[0]);
-      }
-    });
+      })
+      .catch((e) => console.error(e.stack));
   }
+
+  public async create(data: object) {}
 }

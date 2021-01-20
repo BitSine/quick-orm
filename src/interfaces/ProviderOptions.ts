@@ -6,3 +6,11 @@ export interface PostgreSQLOptions {
   port?: number;
   message?: string;
 }
+
+export interface MySQLOptions {
+  host?: string;
+  user?: string;
+  db?: string;
+  password?: string;
+  message?: string;
+}
