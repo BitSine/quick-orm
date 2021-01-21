@@ -16,7 +16,7 @@ export class PostgreSQLProvider {
     console.log(options.message);
   }
 
-  public async queryRaw(queryData: string): Promise<void> {
+  public async rawQuery(queryData: string): Promise<void> {
     this.client.query(queryData).then((res) => {
       console.log(res.rows[0]);
     });

@@ -9,4 +9,4 @@ const db = new PostgreSQLProvider({
   message: "PostgreSQL database started!",
 });
 
-db.queryRaw("SELECT * FROM test_table;");
+db.rawQuery("SELECT * FROM test_table;");

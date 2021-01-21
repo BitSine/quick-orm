@@ -10,12 +10,10 @@ Quick ORM is an ORM, designed for simplicity, and speed. We support a countless 
 
 ## API
 
+### Functions
+
 **create(data: object): Promise[void]**
 <br>
-
-<br>
-**queryRaw(queryData: string): Promise[void]**
-<br>
-Send a raw query
+**rawQuery(query: string): Promise[void]**
 
 ## Contribution
