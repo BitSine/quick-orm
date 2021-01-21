@@ -4,7 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
-    "test": "ts-node-dev --respawn --transpile-only --poll src/test.ts"
+    "test": "ts-node-dev --respawn --transpile-only --poll src/test.ts",
+    "lint": "prettier --write ."
   },
   "keywords": [],
   "author": "",

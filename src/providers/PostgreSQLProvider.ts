@@ -20,6 +20,8 @@ export class PostgreSQLProvider {
     this.client.query(queryData).then((res) => {
       console.log(res.rows[0]);
     });
+
+    this.client.removeAllListeners();
   }
 
   public async create(data: object): Promise<void> {}
