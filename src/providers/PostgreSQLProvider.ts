@@ -17,13 +17,10 @@ export class PostgreSQLProvider {
   }
 
   public async queryRaw(queryData: string): Promise<void> {
-    this.client
-      .query(queryData)
-      .then((res) => {
-        console.log(res.rows[0]);
-      })
-      .catch((e) => console.error(e.stack));
+    this.client.query(queryData).then((res) => {
+      console.log(res.rows[0]);
+    });
   }
 
-  public async create(data: object) {}
+  public async create(data: object): Promise<void> {}
 }

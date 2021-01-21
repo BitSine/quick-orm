@@ -10,4 +10,3 @@ const db = new PostgreSQLProvider({
 });
 
 db.queryRaw("SELECT * FROM test_table;");
-db.create({});
