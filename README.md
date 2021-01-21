@@ -4,9 +4,19 @@ Quick ORM is an ORM, designed for simplicity, and speed. We support a countless 
 
 ## Why Quick ORM?
 
-- Supports numerous DB providers (MySQL, PostgreSQL, MongoDB, SQL Server, SQLite)
+- Supports numerous DB providers
 - Exceptional TypeScript support
 - No SQL - With quick-orm, you don't need to write even a **single** line of SQL, to do everything SQL offers!
+
+## Database Providers we Support
+
+- MySQL
+- PostgreSQL
+- MongoDB
+- SQLite
+- SQL Server
+- Apache CouchDB
+- ArangoDB
 
 ## API
 
